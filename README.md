@@ -2,6 +2,13 @@
 
 Exemplos simples de utilização do mecanismo de pubsub do redis usando nodeJS.
 
+
+Subir o docker com o redis
+```sh
+docker-compose up -d
+```
+
+
 ```sh
 npm install
 npm start dev
