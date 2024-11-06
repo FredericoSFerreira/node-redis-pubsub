@@ -8,7 +8,7 @@ Subir o docker com o redis
 docker-compose up -d
 ```
 
-
+Instalar as dependencias e iniciar a aplicação
 ```sh
 npm install
 npm start dev
