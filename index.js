@@ -21,6 +21,13 @@ app.post('/publish/:channel', (req, res) => {
   })
 
 
+app.get('/cache', (req, res) => {
+  queue.set('123456', 'xpto-teste')
+  res.sendStatus(200)
+})
+
+
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })

@@ -1,4 +1,4 @@
-import { createClient } from 'redis';
+import { createClient } from '@redis/client';
 
 
 export default class Queue {
@@ -8,7 +8,7 @@ export default class Queue {
         this.client.connect()
         this.client.on('error', err => console.log('Redis Client Error', err));
       }
-
+        
     async publish(channel, value) {
         console.log('Message sent!');
         return this.client.publish(channel, JSON.stringify(value));
